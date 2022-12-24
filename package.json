@@ -1,0 +1,25 @@
+{
+  "name": "node-hash-password",
+  "version": "1.0.1",
+  "description": "Hash your password before storing it on database with node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "homepage": "https://github.com/damartripamungkas/node-hash-password",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damartripamungkas/node-hash-password.git"
+  },
+  "keywords": [
+    "keccak256",
+    "sha256",
+    "sha512",
+    "hash"
+  ],
+  "author": "damartripamungkas",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^5.7.2"
+  }
+}
