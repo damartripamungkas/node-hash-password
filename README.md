@@ -47,13 +47,6 @@ console.log(resultCompare); // true
 ```
 see full example on [here](./example/hash.js)
 
-## 🚀 Roadmap
-
-```
-✅ Easy to use
-⬜ Support browser
-```
-
 ## 🧾 Pre-Requisistes
 
 ```
