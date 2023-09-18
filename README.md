@@ -14,7 +14,7 @@
 
 <br>
 
-## 💼 Available hash methods
+### 💼 Available hash methods
 
 ```
 1. keccak256 
@@ -22,16 +22,16 @@
 3. sha512
 ```
 
-## 💻 Step to install
+### 💻 Step to install
 
 ```
 npm install node-hash-password
 ```
 
-## ✏️ Example
+### ✏️ Example
 
 ```javascript
-const { hashWithKeccak256, compareHashAndPassword } = require('node-hash-password');
+const { hashWithKeccak256, compareHashAndPassword } = require("node-hash-password");
 
 // try hash password with keccak256
 const resultHash = hashWithKeccak256({ password: "my name is damar" });
@@ -47,12 +47,12 @@ console.log(resultCompare); // true
 ```
 see full example on [here](./example/hash.js)
 
-## 🧾 Pre-Requisistes
+### 🧾 Pre-Requisistes
 
 ```
 node.js
 ```
 
-## 📝 License
+### 📝 License
 
 Licensed under the [MIT License](./LICENSE).
