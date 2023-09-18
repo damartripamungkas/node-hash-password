@@ -1,4 +1,4 @@
-const { hashWithKeccak256, hashWithSha256, hashWithSha512 } = require('../index');
+const { hashWithKeccak256, hashWithSha256, hashWithSha512, compareHashAndPassword } = require("../index");
 
 test("hash password with keccak256", () => {
     const result = hashWithKeccak256({ password: "my name is damar" });
