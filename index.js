@@ -37,7 +37,7 @@ const hashWithSha512 = ({ password = "" }) => {
 const compareHashAndPassword = ({ method = "", hash = "", password = "" }) => {
     const hashFunc = method == "keccak256" ? hashWithKeccak256 : method == "sha256" ? hashWithSha256 : method == "sha512" ? hashWithSha512 : null;
     if (hashFunc === null) throw new Error("method is not found");
-    const result = hash == hashFunc({ password });
+    const result = hash.toLowerCase() == hashFunc({ password });
     return result;
 };
 
