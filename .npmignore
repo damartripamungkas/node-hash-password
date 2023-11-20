@@ -1,0 +1,7 @@
+node_modules
+src
+test
+.gitignore
+.eslintrc.json
+.prettierrc
+tsconfig.json

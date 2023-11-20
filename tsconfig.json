@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "noImplicitUseStrict": false,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "outDir": "dist",
+    "sourceMap": false,
+    "strict": false,
+    "target": "ES2020",
+    "module": "CommonJS"
+  },
+  "include": ["src/*.ts"]
+}
