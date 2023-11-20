@@ -1,6 +1,6 @@
 {
   "name": "node-hash-password",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Hash your password before storing it on database with node.js",
   "scripts": {
     "test": "jest",
