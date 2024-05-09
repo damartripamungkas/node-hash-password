@@ -22,14 +22,10 @@
 
 This package hashes plain text, passwords using algorithms.
 
-- keccak256 (max length 66)
-- sha256 (max length 66)
-- sha512 (max length 130)
-
 ### 💻 Step to install :
 
 ```
-npm install --production node-hash-password
+npm install node-hash-password
 ```
 
 ### ✏️ Example :
