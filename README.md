@@ -20,7 +20,7 @@
 
 ### 📖 Description :
 
-This package hashes plain text, passwords using algorithms.
+This package hashes plain text, passwords using algorithms KECCAK-256, SHA-256 or SHA-512.
 
 ### 💻 Step to install :
 
@@ -30,48 +30,41 @@ npm install node-hash-password
 
 ### ✏️ Example :
 
-#### Typescript
-
-```javascript
-import { hashWithKeccak256, hashWithSha256, hashWithSha512, compareHashAndPassword } from "node-hash-password";
-```
-
-#### ESM (import)
-
-```javascript
-import { hashWithKeccak256, hashWithSha256, hashWithSha512, compareHashAndPassword } from "node-hash-password";
-```
-
-#### CommonJs (require)
-
-```javascript
-const { hashWithKeccak256, hashWithSha256, hashWithSha512, compareHashAndPassword } = require("node-interval-return");
-```
-
-#### Usage
-
-```javascript
-const { hashWithKeccak256, compareHashAndPassword } = require("node-hash-password");
-
-const resultHash = hashWithKeccak256({ password: "my name is damar" }); // 0x334700c8ae0754b6660291b12ae7b663531431bbab1ebc185a45ce31b344d927
-
-// try compare pure password with hash method keccak256
-const resultCompare = compareHashAndPassword({
-  method: "keccak256",
-  hash: resultHash,
-  password: "my name is damar",
-});
-console.log(resultCompare); // true
-```
-
 full example see [here](./test)
+
+```javascript
+const { hashWithKeccak256, hashWithSha256, hashWithSha512, compareHashAndPassword, strKeccak256 } = require(`node-hash-password`)
+const passwordFromUser = `my name is damar` // example from input HTML
+
+// result : 0x334700c8ae0754b6660291b12ae7b663531431bbab1ebc185a45ce31b344d926
+const keccak256 = hashWithKeccak256(passwordFromUser)
+console.log(`keccak256 : ${keccak256}`)
+
+// result : 0x0f0bc5f6c0e1a6c2a5725950e66410db8411f000e36edebb46e5029c4f99511b
+const sha256 = hashWithSha256(passwordFromUser)
+console.log(`sha256    : ${sha256}`)
+
+// result : 0xa1e1846cb71a9573fba1d4e8d574e1a22dd8099bd0d2ae4634e42be9ad7b7255edd0e17102855d02b513fd0675085ae06c4ba6f352e0b95b4a9fb38e71958d78
+const sha512 = hashWithSha512(passwordFromUser)
+console.log(`sha512    : ${sha512}`)
+
+const compare = compareHashAndPassword({
+  method: strKeccak256,
+  hash: keccak256,
+  password: passwordFromUser
+})
+console.log(`compare   : ${compare}`) // result : true
+```
 
 ### 🧾 Pre-Requisistes :
 
 ```
-node.js
+- node.js / bun.js / deno.js
+- (optional) typescript
+- (optional) commonJS
+- (optional) ESM
 ```
 
 ### 📝 License :
 
-Licensed under the [MIT License](./LICENSE).
+Licensed see [here](./LICENSE)
