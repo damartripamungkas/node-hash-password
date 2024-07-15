@@ -3,24 +3,8 @@
     {
       "files": "*.json",
       "options": {
-        "tabWidth": 2
-      }
-    },
-    {
-      "files": "*.md",
-      "options": {
-        "printWidth": 300
-      }
-    },
-    {
-      "files": "*.js",
-      "options": {
-        "printWidth": 200,
         "tabWidth": 2,
-        "useTabs": false,
-        "semi": true,
-        "arrowParens": "always",
-        "bracketSameLine": false
+        "printWidth": 200
       }
     },
     {
@@ -29,7 +13,32 @@
         "printWidth": 200,
         "tabWidth": 2,
         "useTabs": false,
-        "semi": true,
+        "semi": false,
+        "arrowParens": "always",
+        "trailingComma": "none",
+        "bracketSameLine": false
+      }
+    },
+    {
+      "files": "*.js",
+      "options": {
+        "printWidth": 200,
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": false,
+        "trailingComma": "none",
+        "arrowParens": "always",
+        "bracketSameLine": false
+      }
+    },
+    {
+      "files": "*.md",
+      "options": {
+        "printWidth": 200,
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": false,
+        "trailingComma": "none",
         "arrowParens": "always",
         "bracketSameLine": false
       }
